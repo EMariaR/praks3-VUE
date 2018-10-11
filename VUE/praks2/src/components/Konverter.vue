@@ -3,18 +3,18 @@
      <h1>Kaalu teisendamine</h1>
      <h4>Sisesta kaal kilogrammides</h4>
     <input type="number" min="0" v-model="kg">
-    <Table>
+    <Table v-if="kg !== 0">
         <tr>
             <td>Grammid</td>
-            <td>{{ `${kg * 1000} g`}}</td>
+            <td>{{ convertKg(1000) + ' g' }}</td>
         </tr>
         <tr>
             <td>Naelad</td>
-            <td>{{ `${(kg * 2.20462262).toFixed(2)} lb`}}</td>
+            <td>{{ convertKg(2.20462262) + ' lb' }}</td>
         </tr>
         <tr>
             <td>Untsid</td>
-            <td>{{ `${(kg * 35.2739619).toFixed(2)} oz`}}</td>
+            <td>{{ convertKg(35.2739619) + ' oz' }}</td>
         </tr>
     </Table>
    
@@ -30,9 +30,11 @@ export default {
       }
   },
   methods: {
-      
-  },
-}
+      convertKg(multiplier) {
+          return (this.kg !== 0) ? (this.kg * multiplier).toiFixed (2) : 0
+          }
+      }
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
