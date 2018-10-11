@@ -1,0 +1,173 @@
+.container {
+	width: 1140px;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #000000;
+	color: white;
+	height: 100%;
+}
+
+header {	
+	padding: 20px;
+	position: relative;
+}
+
+header h1, .muusikapood {
+	text-align: center;
+	font-size: 60px;
+	padding-bottom: 50px;
+	border-bottom: 1px dotted;
+}
+
+.albumid {
+	float: left;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-left: 240px;
+	text-transform: uppercase;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 1140px;
+	justify-content: center;
+	font-size: 15px;
+	text-align: left;
+	padding-bottom: 100px;
+	margin-left: 60px;
+}
+
+.flex-item {
+  display: block;
+  margin: 10px;
+  width: 250px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+h3 {
+	padding: 5px 5px 5px 0px;
+}
+
+.album1 {
+  width: 250px;
+}
+
+.album2 {
+  width: 250px;
+}
+
+.album3 {
+  width: 250px;
+}
+
+.mud2 {
+	display: flex;
+	font-size: 15px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+.mud {
+    width: 10%;
+	margin-right: 450px;
+	text-transform: uppercase;
+}
+
+.table {
+    display: table;
+    border-collapse: collapse;
+    border-color: gray;
+	margin-top: 40px;
+	margin-right: 40px;
+	width: 40%;
+}
+
+th {
+	text-align: left;
+	border-top: 1px solid;
+	padding: 10px;
+	width: 50%;
+}
+
+td {
+	text-align: right;
+	border-top: 1px solid;
+	padding: 10px;
+	width: 50%;
+}
+
+.tagasi {	
+	margin-left: 230px;
+	margin-bottom: 20px;
+	text-decoration: none;
+    display: inline-block;
+	background-color: black;
+	color: white;
+	border-color: black;
+	text-transform: uppercase;
+}
+
+.nimi {
+	text-transform: uppercase;
+	margin-left: 230px;
+	margin-top: 40px;
+}
+
+.outmud {
+	display: flex;
+	width: 300px;
+}
+
+.table {
+	width: 250px;
+	margin-left: 70px;
+	margin-top: 2px;
+}
+
+.video {
+	margin-left: 150px;
+}
+
+.video2 {
+	margin-left: 150px;
+}
+
+.audio {
+	margin-left: 150px;
+}
+
+footer {
+	text-align: center;
+	background-color: #4d4d4d;
+	padding: 65px;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
